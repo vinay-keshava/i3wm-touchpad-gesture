@@ -10,15 +10,7 @@
 ## sudo mkdir -p /etc/X11/xorg.conf.d && sudo tee <<'EOF' /etc/X11/xorg.conf.d/90-touchpad.conf 1> /dev/null
 
 
-Section "InputClass"<br>
-	Identifier "touchpad"<br>
-	MatchIsTouchpad "on"<br>
-	Driver "libinput"<br>
-	Option "Tapping" "on"<br>
-	Option "NaturalScrolling" "on"<br>
-	Option "ScrollMethod" "twofinger"<br>
-	Option "TappingButtonMap" "lrm"<br>
-EndSection<br>
 
+## Copy the contents of touchpad.conf and paste it 
 
 ### Then log out and log back in, or reboot.
